@@ -510,6 +510,7 @@
 				CB22A54F1E4F63230099E396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB22A5501E4F63230099E396 /* Build configuration list for PBXNativeTarget "AlphaBinaryTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				CB22A5521E4F63230099E396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB22A5531E4F63230099E396 /* Build configuration list for PBXNativeTarget "AlphaBinaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +528,7 @@
 				CB22A5551E4F63230099E396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
