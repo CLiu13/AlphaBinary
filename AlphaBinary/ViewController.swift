@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var returnLabel: UILabel!
     
@@ -47,6 +47,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func submit(_ sender: Any) {
+        
+        textField.resignFirstResponder()
         
         if aToB.isOn == true {
         
@@ -104,6 +106,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -112,11 +115,30 @@ class ViewController: UIViewController {
         aToB.isOn = true
         bToA.isOn = false
         
+        self.textField.delegate = self
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard)))
+        
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+    }
+    
+    func dismissKeyboard() {
+        
+        textField.resignFirstResponder()
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+        
     }
     
 }
