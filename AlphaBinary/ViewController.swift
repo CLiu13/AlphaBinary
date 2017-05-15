@@ -164,8 +164,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard)))
         
-        returnLabel.isUserInteractionEnabled = true
-        
     }
 
     override func didReceiveMemoryWarning() {
