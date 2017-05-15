@@ -125,7 +125,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
             let values:[String:String] = ["1":"a", "10":"b", "11":"c", "100":"d", "101":"e", "110":"f", "111":"g", "1000":"h", "1001":"i", "1010":"j", "1011":"k", "1100":"l", "1101":"m", "1110":"n", "1111":"o", "10000":"p", "10001":"q", "10010":"r", "10011":"s", "10100":"t", "10101":"u", "10110":"v", "10111":"w", "11000":"x", "11001":"y", "11010":"z"]
             
-            let input = textField.text!.components(separatedBy: .punctuationCharacters).joined().components(separatedBy: " ").filter{!$0.isEmpty}
+            let rawInput = textField.text!.components(separatedBy: " ")
+            
+            var input: [String] = []
+            
+            for item in rawInput {
+                
+                input += item.components(separatedBy: .punctuationCharacters).filter{!$0.isEmpty}
+                input += item.components(separatedBy: CharacterSet.punctuationCharacters.inverted).filter{!$0.isEmpty}.joined().characters.map{String($0)}
+                
+            }
             
             var returnValue = ""
             
@@ -138,8 +147,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     
                 } else {
                     
-                    returnValue = returnValue.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
+                    //returnValue = returnValue.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
                     returnValue += String(number)
+                    returnValue += " "
                     
                 }
                 
