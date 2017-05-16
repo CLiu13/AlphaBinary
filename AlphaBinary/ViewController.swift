@@ -55,6 +55,18 @@ class CopyableLabel: UILabel {
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBAction func help(_ sender: Any) {
+        
+        performSegue(withIdentifier: "mainToHelp", sender: self)
+        
+    }
+    
+    @IBAction func about(_ sender: Any) {
+        
+        performSegue(withIdentifier: "mainToAbout", sender: self)
+        
+    }
+    
     @IBOutlet weak var returnLabel: CopyableLabel!
     
     @IBOutlet weak var textField: UITextField!
