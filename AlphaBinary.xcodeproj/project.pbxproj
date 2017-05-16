@@ -14,6 +14,8 @@
 		CB22A5331E4F63230099E396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB22A5311E4F63230099E396 /* LaunchScreen.storyboard */; };
 		CB22A53E1E4F63230099E396 /* AlphaBinaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB22A53D1E4F63230099E396 /* AlphaBinaryTests.swift */; };
 		CB22A5491E4F63230099E396 /* AlphaBinaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB22A5481E4F63230099E396 /* AlphaBinaryUITests.swift */; };
+		CBD3BFAB1ECAA60B00ED3AC4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD3BFAA1ECAA60B00ED3AC4 /* SecondViewController.swift */; };
+		CBD3BFAD1ECAA94800ED3AC4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD3BFAC1ECAA94800ED3AC4 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CB22A5441E4F63230099E396 /* AlphaBinaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlphaBinaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB22A5481E4F63230099E396 /* AlphaBinaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaBinaryUITests.swift; sourceTree = "<group>"; };
 		CB22A54A1E4F63230099E396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD3BFAA1ECAA60B00ED3AC4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = AlphaBinary/SecondViewController.swift; sourceTree = "<group>"; };
+		CBD3BFAC1ECAA94800ED3AC4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = AlphaBinary/ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		CB22A51C1E4F63230099E396 = {
 			isa = PBXGroup;
 			children = (
+				CBD3BFAA1ECAA60B00ED3AC4 /* SecondViewController.swift */,
+				CBD3BFAC1ECAA94800ED3AC4 /* ThirdViewController.swift */,
 				CB22A5271E4F63230099E396 /* AlphaBinary */,
 				CB22A53C1E4F63230099E396 /* AlphaBinaryTests */,
 				CB22A5471E4F63230099E396 /* AlphaBinaryUITests */,
@@ -260,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD3BFAB1ECAA60B00ED3AC4 /* SecondViewController.swift in Sources */,
 				CB22A52B1E4F63230099E396 /* ViewController.swift in Sources */,
+				CBD3BFAD1ECAA94800ED3AC4 /* ThirdViewController.swift in Sources */,
 				CB22A5291E4F63230099E396 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5MAZ2D4C8C;
 				INFOPLIST_FILE = AlphaBinary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PolarKing.AlphaBinary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5MAZ2D4C8C;
 				INFOPLIST_FILE = AlphaBinary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PolarKing.AlphaBinary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
