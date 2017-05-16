@@ -177,7 +177,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        returnLabel.layer.borderWidth = 1.0
+        returnLabel.layer.borderWidth = 0.5
         
         aToB.isOn = true
         bToA.isOn = false
