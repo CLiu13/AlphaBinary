@@ -39,7 +39,7 @@ class CopyableLabel: UILabel {
         UIMenuController.shared.setMenuVisible(false, animated: true)
     }
     
-    func showMenu(sender: Any?) {
+    @objc func showMenu(sender: Any?) {
         becomeFirstResponder()
         let menu = UIMenuController.shared
         if !menu.isMenuVisible {
@@ -195,7 +195,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         
         textField.resignFirstResponder()
         
